@@ -10,6 +10,8 @@
 		D0F82F691807EE4D00F4CA16 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F82F681807EE4C00F4CA16 /* XCTest.framework */; };
 		D0F82F6F1807EE4D00F4CA16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0F82F6D1807EE4D00F4CA16 /* InfoPlist.strings */; };
 		D0F82F711807EE4D00F4CA16 /* FunctionalKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F82F701807EE4D00F4CA16 /* FunctionalKitTests.m */; };
+		D0F82F7A1807EE5600F4CA16 /* NSArray+FunctionalKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F82F771807EE5600F4CA16 /* NSArray+FunctionalKit.m */; };
+		D0F82F7B1807EE5600F4CA16 /* NSDictionary+FunctionalKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F82F791807EE5600F4CA16 /* NSDictionary+FunctionalKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,10 @@
 		D0F82F6E1807EE4D00F4CA16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0F82F701807EE4D00F4CA16 /* FunctionalKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionalKitTests.m; sourceTree = "<group>"; };
 		D0F82F721807EE4D00F4CA16 /* FunctionalKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunctionalKitTests-Prefix.pch"; sourceTree = "<group>"; };
+		D0F82F761807EE5600F4CA16 /* NSArray+FunctionalKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FunctionalKit.h"; sourceTree = "<group>"; };
+		D0F82F771807EE5600F4CA16 /* NSArray+FunctionalKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FunctionalKit.m"; sourceTree = "<group>"; };
+		D0F82F781807EE5600F4CA16 /* NSDictionary+FunctionalKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FunctionalKit.h"; sourceTree = "<group>"; };
+		D0F82F791807EE5600F4CA16 /* NSDictionary+FunctionalKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FunctionalKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 		D0F82F5A1807EE3F00F4CA16 = {
 			isa = PBXGroup;
 			children = (
+				D0F82F7C180804B300F4CA16 /* Categories */,
 				D0F82F6A1807EE4D00F4CA16 /* FunctionalKitTests */,
 				D0F82F671807EE4C00F4CA16 /* Frameworks */,
 				D0F82F661807EE4C00F4CA16 /* Products */,
@@ -75,6 +82,17 @@
 				D0F82F721807EE4D00F4CA16 /* FunctionalKitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0F82F7C180804B300F4CA16 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D0F82F761807EE5600F4CA16 /* NSArray+FunctionalKit.h */,
+				D0F82F771807EE5600F4CA16 /* NSArray+FunctionalKit.m */,
+				D0F82F781807EE5600F4CA16 /* NSDictionary+FunctionalKit.h */,
+				D0F82F791807EE5600F4CA16 /* NSDictionary+FunctionalKit.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F82F7A1807EE5600F4CA16 /* NSArray+FunctionalKit.m in Sources */,
 				D0F82F711807EE4D00F4CA16 /* FunctionalKitTests.m in Sources */,
+				D0F82F7B1807EE5600F4CA16 /* NSDictionary+FunctionalKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +293,7 @@
 				D0F82F751807EE4D00F4CA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
